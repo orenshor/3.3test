@@ -1,0 +1,94 @@
+<div style="padding-top:5%; width:50%; padding-left: 3%;">
+    <h2 class="mb-3">Register</h2>
+    <p id="demo"></p>
+    <form name="registerForm"  action="#"
+          class="search-property-1">
+<!--        ng-submit="regCtrl.register(registerForm.$valid)" novalidate-->
+
+        <label for="#">Username</label>
+        <div class="form-field">
+            <div class="icon"><span class="ion-ios-search"></span></div>
+            <input type="text" class="form-control" required ng-minlength="3" ng-maxlength="8">
+        </div>
+
+
+        <label for="#">Password</label>
+        <div class="form-field">
+            <div class="icon"><span class="ion-ios-calendar"></span></div>
+            <input type="text" class="form-control checkin_date" required ng-minlength="5" ng-maxlength="10">
+        </div>
+
+
+        <label for="#">Validate Question #1</label>
+        <div class="form-field">
+            <input type="text" class="form-control checkin_date" required>
+        </div>
+
+
+        <label for="#">Validate Answer #1</label>
+        <div class="form-field">
+            <input type="text" class="form-control checkin_date" required>
+        </div>
+
+
+        <label for="#">Validate Question #1</label>
+        <div class="form-field">
+            <input type="text" class="form-control checkin_date" required>
+        </div>
+
+
+        <label for="#">Validate Answer #2</label>
+        <div class="form-field">
+            <input type="text" class="form-control checkin_date" required>
+        </div>
+
+        <label for="#">City</label>
+        <div class="form-field">
+            <input type="text" class="form-control checkin_date" required>
+        </div>
+
+        <label for="#">Country</label>
+        <div class="form-field">
+            <select id="countries" required></select>
+        </div>
+
+                <label for="#">E-mail</label>
+                <div class="form-field">
+                    <input type="text" class="form-control checkin_date" required>
+                    <!--                        ng-pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"-->
+                </div>
+
+
+                <label for="#">First Name</label>
+                <div class="form-field">
+                    <input type="text" class="form-control checkin_date" ng-pattern="[a-zA-Z]" required>
+                </div>
+
+                <label for="#">Last Name</label>
+                <div class="form-field">
+                    <input type="text" class="form-control checkin_date" ng-pattern="[a-zA-Z]" required>
+                </div>
+
+
+                <label for="#">Categories</label>
+                <!--                    ##########get categories list from DB @@@@@@@@@@@-->
+                <div class="form-field">
+                    <select name="categories" multiple>
+                    </select>
+                </div>
+
+
+        <div class="col-lg-12 align-self-end">
+            <div class="form-group">
+                <div class="form-field">
+                    <input type="submit" value="Let's Go!" class="form-control btn btn-primary">
+                </div>
+            </div>
+        </div>
+
+    </form>
+
+
+</div>
+<!--{"username": String, "password": String, "passQuestion":{"q": String, "ans": String}, "city": String, "country": String,
+ "e-mail": String, "firstName" :String, "lastName": String, "categories": string[]}-->
